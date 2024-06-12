@@ -7,7 +7,8 @@
 // import Students from './Students.jsx'
 // import List from './List.jsx'
 // import Button from './Button.jsx'
-import MyComponent from './MyComponent.jsx'
+// import MyComponent from './MyComponent.jsx'
+import OnChangeComponent from "./OnChangeComponent.jsx";
 
 function App() {
 
@@ -42,7 +43,8 @@ function App() {
         {vegetables.length > 0 ? <List items={vegetables} category="Vegetables"/> : null}
         <List/> */}
         {/* <Button /> */}
-        <MyComponent />
+        {/* <MyComponent /> */}
+        <OnChangeComponent/>
 
       </>
     );
