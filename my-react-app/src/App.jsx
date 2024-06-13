@@ -8,7 +8,8 @@
 // import List from './List.jsx'
 // import Button from './Button.jsx'
 // import MyComponent from './MyComponent.jsx'
-import OnChangeComponent from "./OnChangeComponent.jsx";
+// import OnChangeComponent from "./OnChangeComponent.jsx";
+import UpdateState from "./UpdateState.jsx"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
 
     return(
       <>
+
         {/* <Header></Header>
         <Food></Food>
         <Footer></Footer> */}
@@ -44,7 +46,8 @@ function App() {
         <List/> */}
         {/* <Button /> */}
         {/* <MyComponent /> */}
-        <OnChangeComponent/>
+        {/* <OnChangeComponent/> */}
+        <UpdateState />
 
       </>
     );
