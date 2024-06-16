@@ -9,7 +9,9 @@
 // import Button from './Button.jsx'
 // import MyComponent from './MyComponent.jsx'
 // import OnChangeComponent from "./OnChangeComponent.jsx";
-import UpdateState from "./UpdateState.jsx"
+// import UpdateState from "./UpdateState.jsx"
+import UpdateArray from './UpdateArray.jsx'
+import UseEffect from './UseEffect.jsx';
 
 function App() {
 
@@ -47,7 +49,9 @@ function App() {
         {/* <Button /> */}
         {/* <MyComponent /> */}
         {/* <OnChangeComponent/> */}
-        <UpdateState />
+        {/* <UpdateState /> */}
+        {/* <UpdateArray/> */}
+          <UseEffect />
 
       </>
     );
