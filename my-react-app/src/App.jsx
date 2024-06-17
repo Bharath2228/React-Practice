@@ -10,8 +10,10 @@
 // import MyComponent from './MyComponent.jsx'
 // import OnChangeComponent from "./OnChangeComponent.jsx";
 // import UpdateState from "./UpdateState.jsx"
-import UpdateArray from './UpdateArray.jsx'
-import UseEffect from './UseEffect.jsx';
+// import UpdateArray from './UpdateArray.jsx'
+// import UseEffect from './UseEffect.jsx';
+// import ComponentA from "./UseContext/ComponentA.jsx";
+import UseReference from "./UseReference.jsx";
 
 function App() {
 
@@ -51,8 +53,9 @@ function App() {
         {/* <OnChangeComponent/> */}
         {/* <UpdateState /> */}
         {/* <UpdateArray/> */}
-          <UseEffect />
-
+        {/* <UseEffect /> */}
+        {/* <ComponentA /> */}
+        <UseReference />
       </>
     );
  }
