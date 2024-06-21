@@ -1,0 +1,19 @@
+.completed{
+    color: lightblue;
+}
+
+.logo{
+    width: 20px;
+}
+
+header{
+    border: 1px solid var(--theme-border);
+}
+
+button{
+    background-color: var(--theme-button);
+}
+
+.taskCard{
+    border: 2px solid black;
+}
