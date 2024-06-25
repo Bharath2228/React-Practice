@@ -1,0 +1,29 @@
+{
+    "products": [
+        {
+            "id": 10001,
+            "name": "Basic to Advanced In React",
+            "price": 29,
+            "in_stock": true
+        }, 
+        {
+            "id": 10002,
+            "name": "Web Development",
+            "price": 73,
+            "in_stock": true
+        },
+        {
+            "id": 10003,
+            "name": "Technical Fundamentals by Google",
+            "price": 35,
+            "in_stock": true
+        },
+        {
+            "id": 10004,
+            "name": "Full Stack Java",
+            "price": 22,
+            "in_stock": false
+        }
+    ]
+    
+}
