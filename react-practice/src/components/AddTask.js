@@ -1,8 +1,9 @@
 import { useState } from "react"
 
-export const AddTask = () => {
+export const AddTask = ({tasks, setTasks}) => {
 
     const [taskValue, setTaskValue] = useState("")
+    const [progress, setProgress] = useState(false)
 
     const handleChange = (event) => {
         setTaskValue(event.target.value)
@@ -10,6 +11,7 @@ export const AddTask = () => {
 
     const handleReset = () => {
         setTaskValue("")
+        setProgress(false)
     }
 
     const handleSubmit = (event) => {
@@ -18,23 +20,33 @@ export const AddTask = () => {
         const task = {
             id: Math.floor(Math.random() * 10000),
             name: taskValue,
-            completed: false
+            completed: Boolean(progress)
         }
+
+        setTasks([...tasks, task])  // use spread operator to access the previous tasks
         handleReset()
     }
 
   return (
     <section className="addTask">
         <form onSubmit={handleSubmit}>
+
             <input onChange={handleChange} type="text" name="task" id="task" placeholder="Task Name" autoComplete="off" value={taskValue}/>
-            <select>
-                <option value={true}>Completed</option>
+
+            <select onChange={(event) => setProgress(event.target.value)} value={progress}>
                 <option value={false}>Pending</option>
+                <option value={true}>Completed</option>
             </select>
-            <button type="submit">Add Task</button>
+
             <span onClick={handleReset} className="reset">Reset</span>
+
+            <button type="submit">Add Task</button>
+            
         </form>
         
+        <p>
+            {taskValue}
+        </p>
     </section>
   )
 }
